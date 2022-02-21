@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".Bai02_Activity"
+    tools:deviceIds="wear">
+
+
+    <ImageView
+        android:id="@+id/img_usb"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/img_usb"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/usb_bluetooth_music_reciever_hjx_001_bi_n_loa_th_ng_th_nh_loa_bluetooth"
+        app:layout_constraintStart_toEndOf="@+id/img_usb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_usb"
+
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cuc_ky_hai_long"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+
+        app:layout_constraintTop_toBottomOf="@+id/img_usb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rating"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:numStars="5"
+        android:rating="5.0"
+        android:theme="@sty"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,4 +2,12 @@
     <string name="app_name">My Application</string>
     <string name="forgot_your_password">Forgot your password?</string>
     <string name="login">Login</string>
+    <string name="title_activity_bai02_">Bai02_Activity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="usb_bluetooth_music_reciever_hjx_001_bi_n_loa_th_ng_th_nh_loa_bluetooth">USB Bluetooth Music Reciever HJX-001 Biến loa thường thành loa bluetooth</string>
+    <string name="cuc_ky_hai_long">Cực kỳ hài lòng</string>
 </resources>
